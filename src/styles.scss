@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/scss/theme.scss";
+// @import 'bootstrap/scss/bootstrap';
+
+.arrow-none {
+  &:after {
+    display: none !important;
+  }
+}
+
+.mega-dropdown-column {
+  padding: 0rem !important;
+  margin: 0.9rem !important;
+
+}
