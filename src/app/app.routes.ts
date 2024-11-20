@@ -16,32 +16,10 @@ export const routes: Routes = [
     data: { title: 'Multipurpose Business / Technology Template' },
   },
   {
-    path: 'landings',
-    component: LandingLayoutComponent,
-    loadChildren: () =>
-      import('@views/landings/landings.route').then(
-        (mod) => mod.LANDING_ROUTES
-      ),
-  },
-  {
     path: 'about',
     component: LandingLayoutComponent,
     loadChildren: () =>
       import('@views/pages/about/about.route').then((mod) => mod.ABOUT_ROUTES),
-  },
-  {
-    path: 'blog',
-    component: LandingLayoutComponent,
-    loadChildren: () =>
-      import('@views/pages/blog/blog.route').then((mod) => mod.BLOG_ROUTES),
-  },
-  {
-    path: 'portfolio',
-    component: LandingLayoutComponent,
-    loadChildren: () =>
-      import('@views/pages/portfolio/portfolio.route').then(
-        (mod) => mod.PORTFOLIO_ROUTES
-      ),
   },
   {
     path: 'services',
@@ -57,11 +35,6 @@ export const routes: Routes = [
       import('@views/pages/contacts/contact.route').then(
         (mod) => mod.CONTACT_ROUTES
       ),
-  },
-  {
-    path: 'pages/pricing',
-    component: PricingComponent,
-    data: { title: 'Pricing' },
   },
   {
     path: 'errors/404-1',

@@ -20,22 +20,22 @@ export class APCSStatsComponent {
 
   featureData = [
     {
-      image: this.icons1Img,
-      title: 'Customized Cleaning Plans',
+      icon: 'assets/img/landing/app-showcase-1/features/payments.svg',
+      title: '25 years of shared experience',
       description:
-        'APCS provides tailored cleaning and maintenance solutions to fit each client’s unique needs. From daily to bi-weekly services, we ensure your business gets exactly the care it deserves.',
+        'Locally owned and operated, we bring over 25 years of shared experience.',
     },
     {
-      image: this.icons2Img,
-      title: 'Professional-Grade Equipment',
+      icon: 'assets/img/landing/app-showcase-1/features/payments.svg',
+      title: '60 million square feet',
       description:
-        'Our advanced cleaning tools, like HEPA vacuums and no-dip mops, ensure high standards and prevent cross-contamination. We use color-coded microfiber rags for safe, effective cleaning.',
+        '60 million square feet of facility space, including corporate offices, healthcare centers, and large commercial properties.',
     },
     {
-      image: this.icons3Img,
-      title: 'Comprehensive Services',
+      icon: 'assets/img/landing/app-showcase-1/features/payments.svg',
+      title: 'Austin Metro Area, with expansion into San Antonio and Houston',
       description:
-        'With APCS, you get a one-stop solution for all your cleaning needs. From floor care to window cleaning, save time and money by working with a single trusted partner.',
+        'Austin Metro Area, with expansion into San Antonio and Houston.',
     },
   ]
 

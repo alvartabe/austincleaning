@@ -20,7 +20,7 @@ export const MENU_ITEMS: MenuItemType[] = [
       {
         "key": "janitorial-cleaning-services",
         "label": "Janitorial Cleaning Services",
-        "url": "/janitorial-cleaning-services",
+        "url": "/services/janitorial-cleaning-services",
         "parentKey": "services"
       },
       {
@@ -152,12 +152,6 @@ export const MENU_ITEMS: MenuItemType[] = [
         "parentKey": "quote-now"
       }
     ]
-  },
-  {
-    "key": "blog",
-    "label": "Blog",
-    "url": "/blog",
-    "isTitle": true
   },
   {
     "key": "contact-us",

@@ -1,58 +1,51 @@
-<footer class="footer border-top pt-5 pb-4 pb-lg-5">
-  <div class="container text-center pt-2 pt-md-4 pt-lg-5 pb-xl-3">
-    <div class="row justify-content-center pt-xxl-2">
-      <div class="col-xl-6 col-lg-7 col-md-9 col-sm-11">
-        <h2 class="h1 pb-3 mb-3">Subscribe to Our Newsletter</h2>
-        <form
-          class="subscription-form position-relative validate"
-          action="javascript:void(0);"
-          name="mc-embedded-subscribe-form"
-          novalidate
+<footer class="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
+  <div class="container text-center pt-lg-3">
+    <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+      <img src="assets/img/logos/apcs_drop.png" class="me-2" width="60" alt="Austin Professional Cleaning Service" />
+      <span class="fs-4">Austin Professional Cleaning Service</span>
+    </div>
+    <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+      @for (data of itemsList; track $index) {
+        <li class="nav-item">
+          <a [routerLink]="data.link" class="nav-link">{{ data.label }}</a>
+        </li>
+      }
+    </ul>
+    <div class="d-flex flex-column flex-sm-row justify-content-center">
+      <a
+        href="javascript:void(0)"
+        class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3"
         >
-          <div class="d-flex flex-column flex-sm-row">
-            <div class="position-relative w-100 mb-3 mb-sm-0 me-sm-3">
-              <input
-                class="form-control form-control-lg ps-5"
-                type="email"
-                name="EMAIL"
-                placeholder="Your email"
-                required
-              />
-              <i
-                class="bx bx-envelope fs-xl text-muted position-absolute top-50 start-0 translate-middle-y ms-3"
-              ></i>
-            </div>
-            <button
-              class="btn btn-primary shadow-primary btn-lg"
-              (click)="subscribe()"
-              type="submit"
-              name="subscribe"
-            >
-              {{ isSending ? 'Sending...' : 'Subscribe*' }}
-            </button>
-          </div>
-
-          <div style="position: absolute; left: -5000px" aria-hidden="true">
-            <input
-              class="subscription-form-antispam"
-              type="text"
-              name="b_c7103e2c981361a6639545bd5_29ca296126"
-              tabindex="-1"
-            />
-          </div>
-          <p class="mt-4 mb-0">
-            *Stay tuned for the latest news.
-          </p>
-          <div
-            class="subscription-status position-absolute top-100 start-50 translate-middle-x"
-          ></div>
-        </form>
-      </div>
+        <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+        Quote Now</a
+      >
+      <a href="javascript:void(0)" class="btn btn-outline-light btn-lg mb-3">
+        <i class="bx bx-phone-call fs-xl me-2 ms-n1"></i>
+        Call Now
+      </a>
     </div>
-    <div class="pt-5 mt-lg-3 mt-xl-4">
-      <p class="text-muted mb-0">
-        &copy; All rights reserved.
-      </p>
+    <div class="d-flex justify-content-center pt-4 mt-lg-3">
+      @for (item of socialLinks; track $index) {
+        <a
+          href="javascript:void(0);"
+          class="btn btn-icon btn-secondary btn-{{item.icon}} mx-2"
+          aria-label="Facebook"
+        >
+          <i class="bx bxl-{{ item.icon }}"></i>
+        </a>
+      }
     </div>
+    <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+      <span class="text-light opacity-60"
+        >&copy; All rights reserved. Made by
+      </span>
+      <a
+        class="nav-link d-inline-block p-0"
+        href="studioawak.com"
+        target="_blank"
+        rel="noopener"
+        >StudioAwak.com</a
+      >
+    </p>
   </div>
 </footer>

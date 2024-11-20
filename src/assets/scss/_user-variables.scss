@@ -14,7 +14,9 @@ $primary: #81c776 !default;
 $seconday: #1f5ea7 !default;
 
 $theme-gradients: (
-  "primary":              linear-gradient(90deg, $primary 0%, #81c776 50%, #1f5ea7 100%),
+  "primary": linear-gradient(90deg, $primary 0%, #81c776 50%, #1f5ea7 100%),
+  "secondary":            linear-gradient(90deg, #81c776 0%, #1f5ea7 100%)
 ) !default;
 
 $box-shadow-primary: 0 .5rem 1.125rem -.3rem rgba(#1f5ea7, .9) !default;
+//  "seconday":            linear-gradient(90deg, #81c776 0%, #1f5ea7 100%),
